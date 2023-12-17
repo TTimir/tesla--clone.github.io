@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - PowerWall</title>
+    <link rel="stylesheet" href="./css/solar.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.icon-icons.com/icons2/2699/PNG/512/tesla_logo_icon_169601.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" class="logo">
+            <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                    fill="black"></path>
+            </svg>
+        </a>
+
+    </header>
+
+    <section class="ref-1">
+        <div class="s-video">
+            <img src="https://digitalassets.tesla.com/image/upload/q_auto/f_auto/w_1920/prod/fulfillment/energy/Order/EnergyConfigurator/powerwall-home-side-desktop"
+                width="100%">
+        </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section class="ref-2">
+        <div class="top-banner">
+            <section class="banner-text">
+                <div class="tds--hideon-phone-only">
+                    <div class="top-text-banner">
+                        <h2>30% Federal Tax Credit</h2>
+                        <p>Powerwall orders qualify for a federal tax credit.
+                            <a href="">See Details</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="p-details">
+            <div class="heading">
+                <h2> Powerwall </h2>
+                <p style="margin-top: 5%;opacity: 0.8;"> Store energy for intelligent home backup and grid independence,
+                    complete with remote monitoring anywhere, anytime. </p>
+                <div class="p-input">
+                    <div>
+                        <label>Shipping Address</label>
+                        <div class="address-icon">
+                            <input type="text" name="address" class="input-address">
+                            <i class="fa-regular fa-circle-dot icon" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot">
+            <div>
+                <button class="btn-next" style="margin-bottom: 4%;" disabled>Next</button>
+                <p style="text-align: center;font-size: 13px;letter-spacing: 0.5px;">We won't spam you in any way.
+                </p>
+                <a href="" class="learn-more">Learn More About Powerwall</a>
+            </div>
+        </div>
+
+
+
+
+        <script src="./js/feature.js"></script>
+
+        <!-- learn more alert -->
+        <script>
+            function learn() {
+                alert("All-Season Tires	 All-Season tires are designed to work across the widest range of conditions and offer good traction and comfort in moderate climates \n\nSummer Tires	 Summer tires offer the best traction in warmer weather, especially for performance vehicles at higher speeds. Summer tires have reduced traction and increased noise below 40˚F, and for safety reasons, should not be driven on snow or ice. \n\nWinter Tires	 Winter tires offer the best traction in conditions below 40˚F. For the optimal winter driving experience, we recommend fitting winter wheels and tires just before the season’s first snowfall. Winter wheel and tire packages are available on the Tesla Shop.");
+            }
+        </script>
+
+        <!-- fetaures details -->
+        <script>
+            let links = document.querySelectorAll(".links a");
+
+            for (let link of links) {
+                if (link.dataset.active == active) {
+                    link.classList.add("active");
+                }
+            }
+        </script>
+
+
+        <!-- Slide Show -->
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+
+        <!-- Zip Code -->
+        <script>
+            function btnZip() {
+                let person = prompt("Delivery ZIP Code", "560001");
+                if (person != null) {
+                    document.getElementById("demo").innerHTML =
+                        "Hello " + person + "! How are you today?";
+                }
+            }
+        </script>
+
+</body>
+
+</html>

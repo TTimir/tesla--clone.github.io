@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla - Model Y</title>
+    <link rel="stylesheet" href="./css/car.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.icon-icons.com/icons2/2699/PNG/512/tesla_logo_icon_169601.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" class="logo">
+            <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                    fill="black"></path>
+            </svg>
+        </a>
+        <nav class="center" style="color: black;">
+            <a href="">Model S</a>
+            <a href="">Model 3</a>
+            <a href="">Model X</a>
+            <a href="">Model Y</a>
+            <a href="">Solar Roof</a>
+            <a href="">Solar Panels</a>
+            <a href="">Powerwall</a>
+            <a href="">Shop</a>
+            <a href="">Account</a>
+            <div class="hover"></div>
+        </nav>
+    </header>
+
+    <!--image slider start-->
+    <section class="ref-1">
+        <div class="slider">
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first">
+                    <img src="./images/Model Y/1.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/Model Y/2.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/Model Y/3.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./images/Model Y/compositor.jpeg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+    </section>
+    <!--image slider end-->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section class="ref-2">
+        <div class="top-banner">
+            <section class="banner-text">
+                <div class="tds--hideon-phone-only">
+                    <div class="top-text-banner">
+                        <h2>$7,500 Federal Tax Credit</h2>
+                        <p>All new Model Y vehicles currently qualify for a federal tax credit for eligible buyers. Take
+                            delivery by Dec 31 for full $7,500 tax credit. <br /><br />
+                            <a href="">See Details</a>
+                        </p>
+                    </div>
+                    <div class="bottom-text-banner">
+                        <h1>Lease Starting at $399 /mo</h2>
+                            <p>Excludes taxes and fees with price subject to change. Available in select states.
+                                <br /><br />
+                                <a href="">See Details</a>
+                            </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="c-details">
+            <div class="heading">
+                <h2> Model Y </h2>
+                <p> Est. Delivery: Nov – Dec 2023 </p>
+            </div>
+
+            <div class="c-zip">
+                <i class="fa-regular fa-circle-question"></i> <button onclick="btnZip()">Enter Delivery ZIP
+                    Code</button>
+            </div>
+
+            <div class="purchase">
+                <p>Purchase Price</p>
+            </div>
+
+            <div class="fetures">
+                <one>
+                    <li>260mi</li>
+                    <p>Range (est.)</p>
+                </one>
+                <two>
+                    <li>135mph</li>
+                    <p>Top Speed</p>
+                </two>
+                <three>
+                    <li>6.6sec</li>
+                    <p>0-60 mph</p>
+                </three>
+            </div>
+
+            <div class="links">
+                <div class="regular">
+                    <h1>Rear-Wheet Drive</h1>
+                    <a data-active="active" href="">Model Y <p class="price"> $32,890* <del
+                                style="font-size: 12px;color: gray;">$43,990</del> </p></a>
+                </div>
+                <div class="performance">
+                    <h1>Dual Motor All-Wheel Drive</h1>
+                    <a data-active="active" href="">Model Y Long Range <p class="price">$37,890* <del
+                                style="font-size: 12px;color: gray;">$48,990</del></p></a>
+                    <a data-active="active" href="">Model Y Performance <p class="price">$41,390* <del
+                                style="font-size: 12px;color: gray;">$52,490</del></p></a>
+                </div>
+                <p class="det">
+                    All prices are shown without incentives or est. 3-year <br /> gas savings of $3,600.
+                </p>
+                <button class="feature-d" onclick="openForm()">Fetures Details</button>
+
+                <div class="form-popup" id="myForm">
+                    <button type="button" class="btn cancel" onclick="closeForm()"
+                        style="float: right; background: none; border: 0; padding: 6px; cursor: pointer;">X</button>
+                    <button type="button" class="collapsible">Range and Performance</button>
+                    <div class="content">
+                        <pre class="top-content">
+<b style="font-size: 14px; margin-bottom: 5%;">Acceleration 0-60 mph             Range</b>
+Model Y             6.6 sec          Model Y 242            - 260 miles
+Model Y Long Range  4.8 sec          Model Y Long Range 318 - 330 miles
+Model Y Performance 3.5 sec*         Model Y Performance    - 303 miles
+
+                                     Range varies with wheel selection and
+                                     is reflected under each option
+<hr />
+<b style="font-size: 14px; margin-bottom: 5%;">Top Speed                           Drivetrain</b>
+Model Y	            135 mph            Model Y	           -   Rear-Wheel Drive
+Model Y Long Range  135 mph            Model Y Long Range  -   Dual Motor All-Wheel Drive
+Model Y Performance 155 mph            Model Y Performance -   Dual Motor All-Wheel Drive
+<hr />
+<b style="font-size: 14px; margin-bottom: 5%;">Powerful Efficiency</b>
+Tesla designed Model Y from the ground-up as an electric vehicle using system-level integration throughout. 
+Each component, including batteries, motors and even exterior aerodynamics are optimized to benefit from one 
+another and create one of the most efficient, yet unbelievably powerful vehicles ever built.
+*With first foot of rollout subtracted.
+                        </pre>
+                    </div>
+                    <button type="button" class="collapsible">Interior & Convenience</button>
+                    <div class="content">
+                        <h1>Audio and Media</h1>
+                        <li> Premium audio – 13 speakers, 1 subwoofer, 2 amps, and immersive sound</li>
+                        <li> Music and media over Bluetooth®</li>
+                        <li> USB-A port in the glovebox with a 128GB portable storage device included</li>
+                        <br />
+                        <br />
+
+                        <h1>Comfort</h1>
+                        <li>Power adjustable front seats</li>
+                        <li>Heated front and rear seats</li>
+                        <li>Heated steering wheel</li>
+                        <li>HEPA air filtration system</li>
+                        <li>Tinted glass roof with ultraviolet and infrared protection</li>
+                        <li>Independent flat-fold rear seats</li>
+                        <li>Interior floor mats</li>
+                        <br />
+                        <br />
+
+                        <h1>Convenience</h1>
+                        <li>Power folding, auto-dimming, heated side mirrors</li>
+                        <li>Custom driver profiles</li>
+                        <li>Center console with storage, 4 USB-C ports and wireless charging for 2 smartphones</li>
+                    </div>
+                    <button type="button" class="collapsible">Safety</button>
+                    <div class="content">
+                        <li>Automatic emergency braking</li>
+                        <li>Blind spot monitoring</li>
+                        <li>Front collision warning</li>
+                        <li>Side collision warning</li>
+                        <li>Emergency lane departure avoidance and correction</li>
+                        <li>Obstacle aware acceleration</li>
+                        <li>LED daytime running lights</li>
+                        <li>Sentry Mode</li>
+                        <li>Cabin Overheat Protection</li>
+                        <li>In-app vehicle location monitoring</li>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="paint">
+                <div class="c-color">
+                    <h1>Paint</h1>
+                    <div class="tooltip">
+                        <img src="./images/colors/Paint_MidnightSilver.png" style="border: 3px solid #3e6ae1;"
+                            alt="midnight silver" />
+                        <span class="tooltiptext" id="bottom"> Midnight Silver Metallic Included</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./images/colors/Paint_White.png" alt="white" />
+                        <span class="tooltiptext" id="bottom"> Pearl White Multi-Coat $1,000</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./images/colors/Paint_Blue.png" alt="blue" />
+                        <span class="tooltiptext" id="bottom"> Deep Blue Metallic $1,000</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./images/colors/Paint_Black.png" alt="black" />
+                        <span class="tooltiptext" id="bottom"> Solid Black $2000</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./images/colors/Paint_Red.png" alt="red" />
+                        <span class="tooltiptext" id="bottom"> Red Multi-Coat </b> $2,000</span>
+                    </div>
+                    <p>Midnight Silver Metallic &nbsp; <span>Included</span></p>
+                </div>
+            </div>
+
+            <div class="wheels">
+                <div class="c-wheels">
+                    <h1>Wheels</h1>
+                    <div class="tooltip">
+                        <img src="./images/wheels/gemini_wheels.png" style="border: 3px solid #3e6ae1;"
+                            alt="midnight silver" />
+                        <span class="tooltiptext" id="bottom"> 19’’ Gemini Wheels Included</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./images/wheels/induction_wheels.png" alt="white" />
+                        <span class="tooltiptext" id="bottom"> 20’’ Induction Wheels $2,000</span>
+                    </div>
+                    <p>19’’ Gemini Wheels &nbsp; <span>Included</span> <br />
+                        <span>All-Season Tires <br />
+                            Range (est.) : 242mi - 260mi</span>
+                    </p>
+                    <button class="learn-more" onclick="learn()">Learn More</button>
+                </div>
+            </div>
+
+            <div class="tow">
+                <div class="c-tow">
+                    <h1>Tow Hitch <br />
+                        <span>$1,000</span>
+                    </h1>
+                    <p>High strength, Class II steel tow bar capable of towing up to 3,500 lbs</p>
+                    <button class="add-tow">Add</button>
+                </div>
+            </div>
+
+            <div class="paint">
+                <div class="c-color">
+                    <h1>Interior</h1>
+                    <div class="tooltip">
+                        <img src="./images/interior/ui_swat_int_in3pb.png" style="border: 3px solid #3e6ae1;"
+                            alt="midnight silver" />
+                        <span class="tooltiptext" id="bottom"> All Black Included</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="./images/interior/ui_swat_int_white.png" alt="white" />
+                        <span class="tooltiptext" id="bottom"> Black and White $1,000</span>
+                    </div>
+                    <p>All Black &nbsp; <span>Included</span></p>
+                </div>
+            </div>
+
+            <div class="seating">
+                <div class="c-seat">
+                    <h1>Seating Layout</h1>
+                    <p class="seat-count">5 </p>
+                    <span> Five Seat Interior &nbsp; Included </span>
+                    <li>Second row with adjustable seatbacks</li>
+                    <li>Fold-flat second row for maximum <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cargo storage</li>
+                    <li>Electronic fold-flat releases in trunk</li>
+                    <br />
+                    <button class="feature-d">Fetures Details</button>
+                </div>
+            </div>
+
+            <div class="autopilot">
+                <div class="c-autopilot">
+                    <h1>Enhanced Autopilot <br> <span>$6,000</span></h1>
+                    <li>Navigate on Autopilot</li>
+                    <li>Auto Lane Change</li>
+                    <li>Autopark</li>
+                    <li>Summon</li>
+                    <li>Smart Summon</li>
+                    <div class="btn-autopilot" id="outer">
+                        <div class="inner"><button type="submit" class="add-autopilot"
+                                onClick="return false;">Add</button></div>
+                        <div class="inner"><button type="submit" class="feature-autopilot"
+                                onClick="return false;">Feature Details</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="driving">
+                <div class="c-drive">
+                    <h1>Full Self-Driving <br> Capability <br> <span>$12,000</span></h1>
+                    <p>Your car will be able to drive itself almost <br> anywhere with minimal driver intervention <br>
+                        and will continuously improve</p>
+                    <li>All functionality of Basic Autopilot and Enhanced Autopilot</li>
+                    <li>Autosteer on city streets</li>
+                    <li>Traffic Light and Stop Sign Control</li>
+                    <br>
+                    <p style="font-size: 12px;">
+                        The currently enabled features require active driver
+                        supervision and do not make the vehicle
+                        autonomous. The activation and use of these
+                        features are dependent on achieving reliability far
+                        in excess of human drivers as demonstrated by
+                        billions of miles of experience, as
+                        well as regulatory approval, which may take longer in
+                        some jurisdictions. As these self-driving features
+                        evolve, your car will be continuously upgraded
+                        through over-the-air software updates.
+                    </p>
+                    <div class="btn-autopilot" id="outer">
+                        <div class="inner"><button type="submit" class="add-autopilot"
+                                onClick="return false;">Add</button></div>
+                        <div class="inner"><button type="submit" class="feature-autopilot"
+                                onClick="return false;">Feature Details</button></div>
+                    </div>
+                    <p style="font-size: 13px; margin-top: 4%;">Software options are excluded from the federal tax
+                        credit price cap</p>
+                </div>
+            </div>
+
+            <div class="charging">
+                <div class="c-charge">
+                    <h1>Charging</h1>
+                    <i class="fa-regular fa-circle-question"></i> Home charging equipment is not included
+                    <br>
+                    <br>
+                    <label class="container">Wall Connector <span style="float: right;">$475</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Mobile Connector <span style="float: right;">$230</span>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <button class="learn-more" style="margin-top: 10%;">Learn More</button>
+                </div>
+            </div>
+
+            <div class="order">
+                <div>
+                    <h1>
+                        Order Your Model Y
+                        <br>
+                        <span>
+                            Est. Delivery: Nov – Dec 2023
+                        </span>
+                    </h1>
+                    <button class="btn-continue">Continue</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="./js/feature.js"></script>
+
+    <!-- learn more alert -->
+    <script>
+        function learn() {
+            alert("All-Season Tires	 All-Season tires are designed to work across the widest range of conditions and offer good traction and comfort in moderate climates \n\nSummer Tires	 Summer tires offer the best traction in warmer weather, especially for performance vehicles at higher speeds. Summer tires have reduced traction and increased noise below 40˚F, and for safety reasons, should not be driven on snow or ice. \n\nWinter Tires	 Winter tires offer the best traction in conditions below 40˚F. For the optimal winter driving experience, we recommend fitting winter wheels and tires just before the season’s first snowfall. Winter wheel and tire packages are available on the Tesla Shop.");
+        }
+    </script>
+
+    <!-- fetaures details -->
+    <script>
+        let links = document.querySelectorAll(".links a");
+
+        for (let link of links) {
+            if (link.dataset.active == active) {
+                link.classList.add("active");
+            }
+        }
+    </script>
+
+
+    <!-- Slide Show -->
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+
+    <!-- Zip Code -->
+    <script>
+        function btnZip() {
+            let person = prompt("Delivery ZIP Code", "560001");
+            if (person != null) {
+                document.getElementById("demo").innerHTML =
+                    "Hello " + person + "! How are you today?";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

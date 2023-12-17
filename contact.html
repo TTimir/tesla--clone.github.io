@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Clone</title>
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.icon-icons.com/icons2/2699/PNG/512/tesla_logo_icon_169601.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" class="logo">
+            <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+                    fill="black"></path>
+            </svg>
+        </a>
+        <nav class="center" style="color: black;">
+            <a href="">Model S</a>
+            <a href="">Model 3</a>
+            <a href="">Model X</a>
+            <a href="">Model Y</a>
+            <a href="">Solar Roof</a>
+            <a href="">Solar Panels</a>
+            <a href="">Powerwall</a>
+            <a href="">Shop</a>
+            <a href="">Account</a>
+            <div class="hover"></div>
+        </nav>
+    </header>
+
+    <h1 class="title" style="color: aliceblue;">Schedule a Demo Drive</h1>
+    <h1 class="title">Schedule a Demo Drive</h1>
+    <div class="badge-container">
+        <div class="car">
+            <i class="fa-solid fa-car-side"></i>
+            <p>30 Minutes Demo Drive</p>
+        </div>
+        <div class="tech">
+            <i class="fa-brands fa-screenpal"></i>
+            <p>Experience Tesla Technology</p>
+        </div>
+        <div class="charge">
+            <i class="fa-solid fa-bolt"></i>
+            <p>Learn About Charging & Savings</p>
+        </div>
+        <div class="que">
+            <i class="fa-solid fa-question"></i>
+            <p>All Your Questions Answered</p>
+        </div>
+    </div>
+
+
+    <div class="c-img">
+        <div class="row">
+            <h1 class="s-model">Select Model</h1>
+            <div class="model">
+                <p class="demo cursor" onclick="currentSlide(1)">Model S</p>
+                <p class="demo cursor" onclick="currentSlide(2)">Model 3</p>
+                <p class="demo cursor" onclick="currentSlide(3)">Model X</p>
+                <p class="demo cursor" onclick="currentSlide(4)">Model Y</p>
+            </div>
+        </div>
+
+        <div class="container" style="display: flex;align-items: center;justify-content: center;margin-left: 27.4%;">
+            <div class="mySlides">
+                <img src="images/demo-model 3.jpg" style="width:66.6%">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/demo-model s.jpg" style="width:66.6%">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/demo-model x.jpg" style="width:66.6%">
+            </div>
+
+            <div class="mySlides">
+                <img src="images/demo-model y.jpg" style="width:66.6%">
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <div class="contact-zip">
+            <h1>Find Time and Location</h1>
+            <p>Input your zip code to search for Tesla showrooms and schedule a Demo Drive</p>
+            <div class="container">
+                <form class="nosubmit">
+                    <input class="nosubmit" type="search" placeholder="Zip Code">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="contact-info">
+        <div class="contact-input">
+            <h1>Contact Information</h1>
+            <form action="https://formspree.io/f/xbjverpb" method="post">
+                <div class="inline">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="firstname">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </div>
+                </div>&nbsp;
+                <div class="inline">
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="lastname">
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input type="tel" name="phone" placeholder="+91">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn-demo-drive">Schedule Demo Drive</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="user-check">
+        <label class="container-check">
+            I’m interested in Solar and Powerwall</span>
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <br>
+        <p>
+            By clicking "Schedule Demo Drive", I authorize Tesla to contact me about this request as well as with more
+            information about Tesla products, services and regional events via the contact information I provide. I
+            understand calls or texts may use automatic or computer-assisted dialing or pre-recorded messages. Normal
+            message and data rates apply. I can opt out at any time in the Tesla app or by unsubscribing. This is not
+            required for purchase. Drivers must have a valid U.S. driver's license and be 18 years of age or older.
+        </p>
+        <div style="margin: 20%;"></div>
+    </div>
+
+    <footer>
+        <li>Tesla.Clone © 2023</li>
+        <li>Privacy & Legal</li>
+        <li>Vehicle Recalls</li>
+        <li>Contact</li>
+        <li>News</li>
+        <li>Get Updates</li>
+        <li>Locations</li>
+    </footer>
+
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+
+</body>
