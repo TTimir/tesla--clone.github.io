@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header a.logo {
+    width: 150px;
+    height: 15px;
+    margin-top: 10px;
+}
+
+header {
+    margin-left: 50px;
+    margin-right: 10px;
+    z-index: 1;
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+}
+
+header a {
+    line-height: 30px;
+    padding: 0 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: inherit;
+}
+
+header nav.center {
+    margin-left: 221px;
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    color: #fff;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+header nav.center a:nth-child(7) {
+    padding-right: 154px;
+}
+
+.hover {
+    /* background-color: rgba(128, 128, 128, 0.15); */
+    background-color: hsla(0, 0%, 0%, .05);
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.7s;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0, 1);
+    /* transition-timing-function:cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+    border-radius: 4px;
+    height: 30px;
+    display: inline-block;
+}
+
+.center a:nth-child(1):hover~.hover {
+    opacity: 1;
+    left: 0;
+    width: 72px;
+}
+
+.center a:nth-child(2):hover~.hover {
+    opacity: 1;
+    left: 74px;
+    width: 72px;
+}
+
+.center a:nth-child(3):hover~.hover {
+    opacity: 1;
+    left: 145px;
+    width: 78px;
+}
+
+.center a:nth-child(4):hover~.hover {
+    opacity: 1;
+    left: 220px;
+    width: 78px;
+}
+
+.center a:nth-child(5):hover~.hover {
+    opacity: 1;
+    left: 295px;
+    width: 90px;
+}
+
+.center a:nth-child(6):hover~.hover {
+    opacity: 1;
+    left: 385px;
+    width: 95px;
+}
+
+.center a:nth-child(7):hover~.hover {
+    opacity: 1;
+    left: 485px;
+    width: 85px;
+}
+
+.center a:nth-child(8):hover~.hover {
+    opacity: 1;
+    left: 715px;
+    width: 48px;
+}
+
+.center a:nth-child(9):hover~.hover {
+    opacity: 1;
+    left: 770px;
+    width: 70px;
+}
+
+.center a:nth-child(10):hover~.hover {
+    opacity: 1;
+    left: 840px;
+    width: 56px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 4%;
+}
+
+.badge-container {
+    width: 50%;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    margin-left: 26.5%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-model {
+    display: flex;
+    margin-left: 27.5%;
+    font-weight: normal;
+    font-size: 20px;
+    color: gray;
+}
+
+.model {
+    width: 50%;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    margin-left: 26.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.model p {
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid gray;
+    border-radius: 4px;
+    padding: 8px 52px;
+    cursor: pointer;
+    margin-bottom: 3%;
+    transition: all .5s ease;
+}
+
+.model p:hover {
+    border: 2px solid #3e6ae1;
+}
+
+.model p:nth-child(4) {
+    border: 2px solid #3e6ae1;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 0px solid currentColor;
+    border-radius: 5px;
+    margin: 0 0 30px;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    transition: all .7s ease-in;
+}
+
+input[type="search"]::placeholder {
+    color: #5c5e62;
+}
+
+input:focus {
+    box-shadow: 0 0 3px 0 #d0d1d2;
+    border-color: #555;
+    outline: none;
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+}
+
+input.nosubmit {
+    margin-top: 5%;
+    border: 0px solid #555;
+    width: 50%;
+    font-size: 16px;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+    background-color: #f4f4f4;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.contact-info h1 {
+    margin-bottom: 5%;
+}
+
+form .inline {
+    width: 100%;
+    display: table;
+    margin-bottom: 4%;
+}
+
+form .inline div {
+    /* display: table-cell; */
+    margin-right: 6%;
+    margin-bottom: 5%;
+}
+
+form .inline div:nth-child(n+2) {
+    padding-left: 10px;
+}
+
+.contact-info input {
+    margin-top: 2%;
+    border: 0px solid #555;
+    width: 100%;
+    font-size: 16px;
+    padding: 9px;
+    padding-right: 70px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+.contact-info label {
+    font-size: 15px;
+    color: #5c5e62;
+}
+
+.user-check {
+    margin-left: 27%;
+    color: #333;
+    width: 45%;
+    letter-spacing: 1px;
+}
+
+/* checkbox */
+.container-check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #111;
+    border-radius: 2px;
+    transition: all 7s ease;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #111;
+    border-width: 0 1.8px 1.8px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.user-check p {
+    font-size: 14.5px;
+    color: #5c5e62;
+}
+
+.btn-demo-drive {
+    position: absolute;
+    top: 1570px;
+    left: 27%;
+    margin-top: 40px;
+    color: #fff;
+    background: #3e6ae1;
+    padding: 12px 62px;
+    border: 0;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: 0.7s ease;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 8%;
+}
+
+.btn-demo-drive:hover {
+    background-color: #2f59ce;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+footer li {
+    list-style: none;
+    font-size: 14px;
+    color: #5c5e62;
+    font-weight: 500;
+    margin-left: 15px;
+    z-index: 9999;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
